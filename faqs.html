@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAQs – Vibra.com</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleFAQ(id) {
+      const content = document.getElementById(id);
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="index.html">Vibra.com</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="featured.html">Featured</a></li>
+          <li><a href="submit.html">Submit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h2>FAQs</h2>
+    <div>
+      <h4 onclick="toggleFAQ('faq1')">How can I submit a biography?</h4>
+      <p id="faq1" style="display:none;">Go to the "Submit" page and fill in the form with your story.</p>
+
+      <h4 onclick="toggleFAQ('faq2')">Do I need permission to submit someone else's story?</h4>
+      <p id="faq2" style="display:none;">Yes, you should have their permission or make it clear it's a tribute.</p>
+    </div>
+  </main>
+  <footer><div class="container">© 2025 Vibra.com</div></footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Submit Your Story – Vibra.com</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="index.html">Vibra.com</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="featured.html">Featured</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h2>Submit Your Story</h2>
+    <form id="storyForm">
+      <label>Full Name:</label>
+      <input type="text" name="name" required />
+      <label>Email:</label>
+      <input type="email" name="email" required />
+      <label>Biography Title:</label>
+      <input type="text" name="title" required />
+      <label>Your Story:</label>
+      <textarea name="story" rows="8" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </main>
+  <script src="main.js"></script>
+  <footer><div class="container">© 2025 Vibra.com</div></footer>
+</body>
+</html>

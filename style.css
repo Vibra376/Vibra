@@ -1,0 +1,145 @@
+/* ========= GLOBAL RESET & BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* ========= NAVIGATION ========== */
+.site-header {
+  background-color: #023047;
+  padding: 1em 0;
+  color: white;
+}
+.site-header h1 a {
+  text-decoration: none;
+  color: white;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #8ecae6;
+}
+
+/* ========= SECTIONS ========== */
+main h2 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  color: #023047;
+}
+main section, main article {
+  background-color: white;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+main img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+/* ========= FORMS (Submit & Contact) ========== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+form button, .btn {
+  background-color: #219ebc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+form button:hover, .btn:hover {
+  background-color: #126782;
+}
+
+/* ========= FEATURED BIOGRAPHY CARDS ========== */
+#person1, #person2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 2em;
+}
+#person1 img, #person2 img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* ========= FAQ STYLES ========== */
+main h4 {
+  background-color: #e0f7fa;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0 0;
+}
+main p[id^="faq"] {
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin-bottom: 1em;
+  display: none;
+}
+
+/* ========= FOOTER ========== */
+footer {
+  background-color: #001219;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 40px;
+}
+
+/* ========= MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #person1, #person2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #person1 img, #person2 img {
+    width: 100%;
+    height: auto;
+  }
+}
